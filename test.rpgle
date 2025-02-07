@@ -8,9 +8,11 @@ dcl-s var3 zoned(5) inz;
 
 **Free
 Monitor ;
-    var3 = var2/Var1;
+  //  var3 = var2/Var1;
+    Var3 = var2+var1  ;
 On-Erorr;
     var3 = 0 ;
+
 EndMon;
 
 *inlr = *on ;
