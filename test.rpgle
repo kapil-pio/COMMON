@@ -7,7 +7,7 @@ dcl-s var3 zoned(5) inz;
 
 
 **Free
-
+Monitor;
  var3 = var2/Var1;
-
+ON-Eror;
 *inlr = *on ;
