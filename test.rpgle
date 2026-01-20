@@ -12,7 +12,8 @@ ctl-opt dftactgrp(*no) actgrp(*caller) option(*nodebugio);
 dcl-s var1 zoned(5) inz(5);
 dcl-s var2 zoned(5) inz(10);
 dcl-s var3 zoned(5) inz(0);
-dcl-s var4 char(20) inz('Hello, RPGLE!');
+dcl-s var4 char(20) inz ;
+dcl-s var5 char(20) inz ;
 
 
 // Perform calculation inside a Monitor block to catch errors (e.g., divide by zero)
@@ -22,6 +23,8 @@ on-error;
    // Error handling: set var3 to 0 and continue
    var3 = 0;
 endmon;
+
+Var3= Var+Var5 ;
 
 *inlr = *on;
 return;
