@@ -17,12 +17,10 @@ dcl-s var5 char(20) inz ;
 
 
 // Perform calculation inside a Monitor block to catch errors (e.g., divide by zero)
-monitor;
+
    var3 = var2 / var1;
-on-error;
    // Error handling: set var3 to 0 and continue
    var3 = 0;
-endmon;
 
 Var3= Var+Var5 ;
 
