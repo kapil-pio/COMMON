@@ -25,7 +25,10 @@ Keep business logic unchanged and explain improvements.
 Test Cases
 
 
+Generate detailed test cases for this RPGLE program, including boundary and negative scenarios.
 
+Scenario:
+Business logic requiring test coverage (RPGUnit-style thinking)
 
 Agent mode 
 
