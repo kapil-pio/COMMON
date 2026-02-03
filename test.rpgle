@@ -22,6 +22,7 @@ dcl-s var5 char(20) inz ;
    // Error handling: set var3 to 0 and continue
    ON-ERROR ;
    var3 = 0;
+   Var5 = 0;
    ENDMON ;
 
 Var3= Var+Var5 ;
